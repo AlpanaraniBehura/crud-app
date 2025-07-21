@@ -10,13 +10,6 @@ A simple Django-based web application for managing employee records using CRUD (
 - Delete employee records
 - Fully functional web interface
 
-## 📸 Screenshots
-
-| Add Employee | Employee List | Edit Employee |
-|--------------|---------------|---------------|
-| ![Add](screenshots/add.png) | ![List](screenshots/list.png) | ![Edit](screenshots/edit.png) |
-
-> _Note: Add your screenshots in a `screenshots` folder or remove this section._
 
 ---
 
@@ -30,7 +23,7 @@ A simple Django-based web application for managing employee records using CRUD (
 
 ## 📂 Project Structure
 
-crud-app/
+CRUD/
 │
 ├── core/
 │ ├── migrations/
@@ -50,9 +43,6 @@ crud-app/
 ├── manage.py
 └── README.md
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -62,34 +52,26 @@ Edit
 
 ```bash
 git clone https://github.com/AlpanaraniBehura/crud-app.git
-cd crud-app
+cd CRUD
 2. Create a virtual environment (optional but recommended)
-bash
-Copy
-Edit
 python -m venv env
 source env/bin/activate  # On Windows use: env\Scripts\activate
-3. Install dependencies
-bash
-Copy
-Edit
-pip install django
-4. Run migrations
-bash
-Copy
-Edit
-python manage.py migrate
-5. Start the development server
-bash
-Copy
-Edit
-python manage.py runserver
-6. Visit in browser
-cpp
-Copy
-Edit
-http://127.0.0.1:8000/
-✍️ Author
-Alpana Rani Behura
 
+3. Install dependencies
+pip install django
+
+4. Run migrations
+python manage.py migrate
+
+5.Create a superuser (for accessing the admin panel):
+python manage.py createsuperuser
+
+6. Start the development server
+python manage.py runserver
+
+7. Visit in browser
+http://127.0.0.1:8000/
+
+✍️
+Alpana Rani Behura
 GitHub: @AlpanaraniBehura
