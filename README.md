@@ -23,7 +23,7 @@ A simple Django-based web application for managing employee records using CRUD (
 
 ## 📂 Project Structure
 
-CRUD/
+crud-app/
 │
 ├── core/
 │ ├── migrations/
