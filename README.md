@@ -72,6 +72,43 @@ python manage.py runserver
 7. Visit in browser
 http://127.0.0.1:8000/
 
+8.REST API Integration
+This CRUD app now also supports full REST API functionality using Django REST Framework (DRF).
+
+📁 API Endpoints
+Method	    Endpoint	          Description
+GET 	/api/employees/ 	    List all employees
+POST	/api/employees/	        Create a new employee
+GET	    /api/employees/{id}/	Retrieve employee by ID
+PUT 	/api/employees/{id}/	Update employee by ID
+DELETE  /api/employees/{id}/	Delete employee by ID
+
+🔧 How to Use the API
+You can test API endpoints using:
+1)Postman
+2)cURL
+3)Your browser (for GET requests)
+
+Example POST Request (JSON Body):
+{
+  "name": "Robert",
+  "email": "robert@example.com",
+  "position": "Backend Developer"
+}
+Example PUT Request:
+Update existing employee (e.g. /api/employees/1/):
+
+{
+  "name": "Updated Name",
+  "email": "updated@example.com",
+  "position": "Fullstack Developer"
+}
+
+⚙️ Tools & Technologies Used
+1)Django 5.1.3
+2)Django REST Framework
+3)HTML5, CSS3 for frontend
+
 ✍️
 Alpana Rani Behura
 GitHub: @AlpanaraniBehura
